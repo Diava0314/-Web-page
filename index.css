@@ -1,0 +1,242 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+}
+
+@font-face {
+  font-family: 'muli';
+}
+
+body {
+  display: grid;
+  grid-template-rows: 4fr 1fr 2fr 3fr 1fr 3fr 1fr;
+  background-color: #f2f0ed;
+}
+
+.box-1 {
+  display: grid;
+  grid-template-rows: auto 2fr 2fr;
+}
+
+.logo {
+  max-width: 145px;
+  max-height: 145px;
+}
+
+.logo-img {
+  display: grid;
+  grid-template-columns: 2fr 2fr;
+  position: relative;
+}
+
+.cuadro {
+  position: absolute;
+
+  width: 800px;
+  height: 240px;
+  color: #f2f0ed;
+  font-size: 80px;
+  top: 220px;
+  left: 710px;
+}
+
+.img-1 {
+  background-image: url(https://images01.nicepage.com/35/e9/35e98f8fb8e448241dda4f6d96c96725.jpeg);
+  min-height: 850px;
+  background-position: 50% 50%;
+  background-position-x: 30%;
+  background-position-y: 40%;
+}
+
+.color-1 {
+  background-color: #5f44ae;
+}
+
+.info-1 {
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+}
+
+.info-1 > div:nth-child(1) {
+  padding: 40px;
+  margin: 30px;
+  display: grid;
+  grid-template-rows: 40px 2fr;
+}
+
+.info-1 > div > div {
+  position: relative;
+}
+
+.info-1 > div > div > span {
+  position: absolute;
+  width: 200px;
+  background-color: #dbad49;
+  border: 3px solid #dbad49;
+  top: 16px;
+  left: 10px;
+}
+
+.text-1 > h1 {
+  font-size: 140px;
+  color: #464c4f;
+}
+
+.text-1 > h5 {
+  font-size: 45px;
+  padding-bottom: 40px;
+  color: #464c4f;
+}
+
+.text-1 > p {
+  font-size: 25px;
+  color: #464c4f;
+}
+
+.info-2 {
+  display: grid;
+  grid-template-rows: 1fr 1fr 1fr 1fr;
+}
+
+.info-2 {
+  padding: 20px;
+  margin: 20px;
+}
+
+.info-2 > div > small {
+  font-size: 25px;
+  padding-bottom: 20px;
+  color: rgba(168, 166, 166, 0.863);
+}
+
+.info-2 > div > p {
+  font-size: 28px;
+  padding-top: 20px;
+}
+
+.box-2 {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  gap: 10px;
+}
+
+.box-2 > div:nth-child(1) {
+  display: flex;
+  align-items: center;
+  font-size: 60px;
+  margin: 25px;
+  color: #464c4f;
+}
+
+.box-2 > div:nth-child(2) {
+  background-image: url(https://images01.nicepage.com/d8/e4/d8e430f2e3158287bf4a63fd78ed8e9c.jpeg);
+  background-position: 50% 50%;
+  background-repeat: no-repeat;
+}
+
+.box-2 > div:nth-child(3) {
+  background-image: url(https://images01.nicepage.com/2e/9c/2e9cf47e954ed55eac9ee2b71430997f.jpeg);
+  background-position: 50% 50%;
+  background-repeat: no-repeat;
+}
+
+.box-2 > div:nth-child(4) {
+  background-image: url(https://images01.nicepage.com/7d/fa/7dfa2d6189c272c3b17b432f75d9a5e1.jpeg);
+  background-position: 50% 50%;
+  background-repeat: no-repeat;
+}
+
+.box-3 {
+  display: grid;
+  grid-template-columns: 1fr 3fr;
+  position: relative;
+}
+
+.box-3 > :nth-child(2) {
+  background-color: #5f44ae;
+  position: relative;
+  margin: 50px;
+}
+.orienrtacion {
+  position: absolute;
+  width: 700px;
+  height: 600px;
+  left: 360px;
+  top: 120px;
+}
+
+.orienrtacion > h1 {
+  color: #dbad49;
+  font-size: 100px;
+  padding-bottom: 5px;
+}
+
+.orienrtacion > b {
+  font-size: 25px;
+  color: white;
+}
+
+.orienrtacion > p {
+  font-size: 28px;
+  padding-top: 30px;
+  color: rgb(180, 180, 180);
+}
+
+.button-1 {
+  position: absolute;
+  bottom: 145px;
+  left: 50px;
+}
+
+.button-1 > button {
+  width: 200px;
+  height: 55px;
+  font-size: 21px;
+  color: white;
+  border: 2px solid white;
+  background-color: rgba(247, 255, 255, 0);
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: white;
+  color: #464c4f;
+}
+
+.box-3 > span {
+  position: absolute;
+  top: 130px;
+  left: 0px;
+  width: 750px;
+  height: 822px;
+  background-position: 47% 40%;
+  background-image: url(https://images01.nicepage.com/76/65/766517b9f66e54376a841c2126cf363c.jpeg);
+}
+
+.box-4 {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  padding-top: 50px;
+}
+
+.box-4 > :nth-child(1) {
+  display: grid;
+  grid-template-rows: 40px 1fr;
+  padding: 20px;
+}
+
+.box-4 > div > div > p {
+  font-size: 100px;
+  color: #464c4f;
+  margin: 20px;
+}
+
+.box-4 > div > div > b {
+  font-size: 40px;
+  color: #464c4f;
+}
+
+.box-4 > div > div > small {
+  font-size: 30px;
+  color: #464c4f;
+}
